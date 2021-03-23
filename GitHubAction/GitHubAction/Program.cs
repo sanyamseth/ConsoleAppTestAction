@@ -7,7 +7,7 @@ namespace GitHubAction
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World2!");
-            Console.ReadKey();
+           
         }
     }
 }
