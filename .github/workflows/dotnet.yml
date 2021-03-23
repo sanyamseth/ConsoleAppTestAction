@@ -20,5 +20,5 @@ jobs:
     - name: Build
       run: dotnet build GitHubAction/GitHubAction -o ./bin/release/.netcoreapp3.1/ -c Release -f netcoreapp3.1
     - name: Run
-      run: dotnet --project   GitHubAction/GitHubAction/GitHubAction.csproj
+      run: dotnet run --project   GitHubAction/GitHubAction/GitHubAction.csproj
     
