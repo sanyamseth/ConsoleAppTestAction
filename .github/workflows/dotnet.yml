@@ -2,7 +2,7 @@ name: Action
 on:
   schedule:
     - cron: '*/6 * * * *'
-  workflow_dispatch:{}
+  workflow_dispatch: {}
   
 jobs:
   build:
