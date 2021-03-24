@@ -11,6 +11,7 @@ namespace GitHubAction
             foreach(var arg in args)
             {
                 Console.WriteLine(arg);
+                Console.WriteLine(Environment.GetEnvironmentVariable("Hello"));
             }
             Console.WriteLine("Hello World2!");
            
