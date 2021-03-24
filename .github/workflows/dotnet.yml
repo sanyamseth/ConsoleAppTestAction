@@ -2,6 +2,8 @@ name: Action
 on:
   schedule:
     - cron: '*/6 * * * *'
+  workflow_dispatch: {}
+  
 jobs:
   build:
     runs-on: windows-latest
@@ -13,4 +15,4 @@ jobs:
       with:
         dotnet-version: 3.1.x
     - name: Run
-      run: dotnet run --project   GitHubAction/GitHubAction/GitHubAction.csproj
+      run: dotnet run --project   GitHubAction/GitHubAction/GitHubAction.csproj ${{secrets.APITOKEN}}
