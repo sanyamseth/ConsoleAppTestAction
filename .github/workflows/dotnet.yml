@@ -16,3 +16,5 @@ jobs:
         dotnet-version: 3.1.x
     - name: Run
       run: dotnet run --project   GitHubAction/GitHubAction/GitHubAction.csproj ${{secrets.APITOKEN}}
+      env: 
+          Hello: world
